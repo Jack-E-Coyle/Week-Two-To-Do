@@ -18,4 +18,12 @@ export class AppComponent {
   summary() : string {
       return '${this.thingsToDo.length} to do / ${this.thingsCompleted.length} done';
   }
+
+  constructor() {
+    setInterval(() =>  {
+        this.thingsToDo.push('Make Coffee');
+
+    }, 1000);
+  
+  }
 }
