@@ -1,2 +1,2 @@
 <h1>{{title}}</h1>
-<p *ngFor="let item of thingsToDo">{{item}}</p>
+<p *ngFor="let item of thingsToDo; let odd=odd; let even=even; let i = index" [ngClass] = { oddrow : odd, evenrow : even}>{{i}} {{item}}</p>
