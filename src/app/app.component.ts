@@ -12,4 +12,10 @@ export class AppComponent {
     'Learn Angular',
     'Learn Redux'
   ];
+
+  thingsCompleted = [];
+
+  summary() : string {
+      return '${this.thingsToDo.length} to do / ${this.thingsCompleted.length} done';
+  }
 }
